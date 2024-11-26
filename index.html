@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player - Project</title>
+</head>
+<body>
+    <img src="imagens/rock.jpg" alt="imagem guitarra">
+    <div class="descricao">
+        <h2>Guitar Solo</h2>
+        <i>Artista desconhecido</i><!--Texto em itálico-->
+    </div>
+    <div class="duracao">
+        <div class="barra">
+            <progress value="0" max="1"></progress><!--Barra de progresso da música-->
+            <div class="ponto"></div><!--Ponto dentro da barra de progresso-->
+        </div>
+        <div class="tempo">
+            <p class="inicio">0:00</p>
+            <p class="fim">3:40</p>
+        </div>
+    </div>
+
+    <div class="player">
+        <i class="fas fa-step-backward setas anterior"></i>
+        <i class="fas fa-play-circle botao-play"></i>
+        <i class="fas fa-pause-circle botao-pause"></i>
+        <i class="fas fa-step-forward setas proximo"></i>
+    </div>
+    <audio src="musicas/We Ride! - Reed Mathis.mp3"></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
